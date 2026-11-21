@@ -64,6 +64,8 @@ section { padding-block: 56px; }
 section + section { border-top: 1px solid var(--line); }
 .head { display: grid; gap: 10px; margin-bottom: 28px; }
 
+.vid { width: 100%; max-width: 860px; aspect-ratio: 16 / 9; background: #000; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); }
+.vid video { display: block; width: 100%; height: 100%; object-fit: contain; background: #000; }
 /* 2 Qué es */
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .two > * { min-width: 0; }
@@ -144,6 +146,7 @@ footer { border-top: 1px solid var(--line); padding-block: 28px; color: var(--mu
       <p class="sub" style="margin-top:20px">El juego de cartas donde ganas cultivando virtudes.</p>
       <p class="sub" style="margin-top:8px">Inspirado en la vida de san Francisco de Asís. Se juega cuidando tus virtudes y protegiéndolas de lo que las hace caer.</p>
       <nav class="nav" aria-label="Secciones">
+        <a href="#video">Video</a>
         <a href="#que-es">¿Qué es TAU?</a>
         <a href="#cartas">Las cartas</a>
         <a href="#como-se-juega">Cómo se juega</a>
@@ -156,6 +159,21 @@ footer { border-top: 1px solid var(--line); padding-block: 28px; color: var(--mu
 </header>
 
 <main>
+<section id="video">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Conócelo en 80 segundos</p>
+      <h2>Video promocional</h2>
+    </div>
+    <div class="vid">
+      <video controls preload="metadata" playsinline>
+        <source src="Video%20Promocional%20Tau.mp4" type="video/mp4">
+        Tu navegador no puede reproducir el video.
+      </video>
+    </div>
+  </div>
+</section>
+
 <section id="que-es">
   <div class="wrap">
     <div class="head">
